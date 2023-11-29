@@ -5,7 +5,6 @@ const app = express();
 app.use(express.json());
 
 const movieControllers = require("./controllers/movieControllers");
-const userControllers = require("./controllers/userControllers");
 
 app.post("/api/movies", movieControllers.postMovie);
 app.post("/api/users", userControllers.postUser);
